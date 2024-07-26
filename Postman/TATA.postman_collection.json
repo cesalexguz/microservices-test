@@ -1,0 +1,2336 @@
+{
+	"info": {
+		"_postman_id": "b696108a-09e6-4c59-902c-b30afb98c3ac",
+		"name": "TATA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12232219"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "ObtenerClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/obtenerClientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"obtenerClientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerClientes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/obtenerClientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"obtenerClientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:08:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"identificacion\": \"1718943944\",\n        \"nombre\": \"Jose Lema\",\n        \"genero\": \"M\",\n        \"edad\": 29,\n        \"direccion\": \"Otavalo sn y principal\",\n        \"telefono\": \"098254785\",\n        \"clienteId\": 1,\n        \"contrasena\": \"1234\",\n        \"estado\": true\n    },\n    {\n        \"identificacion\": \"1718943946\",\n        \"nombre\": \"Marianela Montalvo\",\n        \"genero\": \"F\",\n        \"edad\": 63,\n        \"direccion\": \"Amazonas y NNUU\",\n        \"telefono\": \"097548965\",\n        \"clienteId\": 2,\n        \"contrasena\": \"5678\",\n        \"estado\": true\n    },\n    {\n        \"identificacion\": \"1718943947\",\n        \"nombre\": \"Juan Osorio\",\n        \"genero\": \"M\",\n        \"edad\": 30,\n        \"direccion\": \"13 junio y Equinoccial\",\n        \"telefono\": \"098874587\",\n        \"clienteId\": 4,\n        \"contrasena\": \"1245\",\n        \"estado\": true\n    },\n    {\n        \"identificacion\": \"1718943947\",\n        \"nombre\": \"Juan Osorio\",\n        \"genero\": \"M\",\n        \"edad\": 31,\n        \"direccion\": \"13 junio y Equinoccial\",\n        \"telefono\": \"098874588\",\n        \"clienteId\": 5,\n        \"contrasena\": \"1245\",\n        \"estado\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "ObtenerCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/obtenerCliente/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"obtenerCliente",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerCliente",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/obtenerCliente/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"obtenerCliente",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:10:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identificacion\": \"1718943946\",\n    \"nombre\": \"Marianela Montalvo\",\n    \"genero\": \"F\",\n    \"edad\": 63,\n    \"direccion\": \"Amazonas y NNUU\",\n    \"telefono\": \"097548965\",\n    \"clienteId\": 2,\n    \"contrasena\": \"5678\",\n    \"estado\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "BorrarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/borrar/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"borrar",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "BorrarCliente",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/borrar/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"borrar",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:11:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identificacion\": \"1718943947\",\n    \"nombre\": \"Juan Osorio\",\n    \"genero\": \"M\",\n    \"edad\": 30,\n    \"direccion\": \"13 junio y Equinoccial\",\n    \"telefono\": \"098874587\",\n    \"clienteId\": 4,\n    \"contrasena\": \"1245\",\n    \"estado\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearCliente1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificacion\": \"1718943944\",\r\n    \"nombre\":  \"Jose Lema\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 29,  \r\n    \"direccion\": \"Otavalo sn y principal\",\r\n    \"telefono\": \"098254785\", \r\n    \"contrasena\": \"1234\", \r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCliente1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identificacion\": \"1718943944\",\r\n    \"nombre\":  \"Jose Lema\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 29,  \r\n    \"direccion\": \"Otavalo sn y principal\",\r\n    \"telefono\": \"098254785\", \r\n    \"contrasena\": \"1234\", \r\n    \"estado\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:01:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identificacion\": \"1718943944\",\n    \"nombre\": \"Jose Lema\",\n    \"genero\": \"M\",\n    \"edad\": 29,\n    \"direccion\": \"Otavalo sn y principal\",\n    \"telefono\": \"098254785\",\n    \"clienteId\": 1,\n    \"contrasena\": \"1234\",\n    \"estado\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearCliente2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificacion\": \"1718943946\",\r\n    \"nombre\":  \"Marianela Montalvo\",\r\n    \"genero\": \"F\",\r\n    \"edad\": 63,  \r\n    \"direccion\": \"Amazonas y NNUU\",\r\n    \"telefono\": \"097548965\", \r\n    \"contrasena\": \"5678\", \r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCliente2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identificacion\": \"1718943946\",\r\n    \"nombre\":  \"Marianela Montalvo\",\r\n    \"genero\": \"F\",\r\n    \"edad\": 63,  \r\n    \"direccion\": \"Amazonas y NNUU\",\r\n    \"telefono\": \"097548965\", \r\n    \"contrasena\": \"5678\", \r\n    \"estado\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:03:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identificacion\": \"1718943946\",\n    \"nombre\": \"Marianela Montalvo\",\n    \"genero\": \"F\",\n    \"edad\": 63,\n    \"direccion\": \"Amazonas y NNUU\",\n    \"telefono\": \"097548965\",\n    \"clienteId\": 2,\n    \"contrasena\": \"5678\",\n    \"estado\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearCliente3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificacion\": \"1718943947\",\r\n    \"nombre\":  \"Juan Osorio\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 30,  \r\n    \"direccion\": \"13 junio y Equinoccial\",\r\n    \"telefono\": \"098874587\", \r\n    \"contrasena\": \"1245\", \r\n    \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCliente3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"identificacion\": \"1718943947\",\r\n    \"nombre\":  \"Juan Osorio\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 30,  \r\n    \"direccion\": \"13 junio y Equinoccial\",\r\n    \"telefono\": \"098874587\", \r\n    \"contrasena\": \"1245\", \r\n    \"estado\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:06:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identificacion\": \"1718943947\",\n    \"nombre\": \"Juan Osorio\",\n    \"genero\": \"M\",\n    \"edad\": 30,\n    \"direccion\": \"13 junio y Equinoccial\",\n    \"telefono\": \"098874587\",\n    \"clienteId\": 4,\n    \"contrasena\": \"1245\",\n    \"estado\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "ActualizarCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clienteId\": 3,\r\n    \"identificacion\": \"1718943947\",\r\n    \"nombre\":  \"Juan Osorio\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 31,  \r\n    \"direccion\": \"13 junio y Equinoccial\",\r\n    \"telefono\": \"098874588\", \r\n    \"contrasena\": \"1245\", \r\n    \"estado\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ActualizarCliente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clienteId\": 3,\r\n    \"identificacion\": \"1718943947\",\r\n    \"nombre\":  \"Juan Osorio\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 31,  \r\n    \"direccion\": \"13 junio y Equinoccial\",\r\n    \"telefono\": \"098874588\", \r\n    \"contrasena\": \"1245\", \r\n    \"estado\": true\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:07:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"identificacion\": \"1718943947\",\n    \"nombre\": \"Juan Osorio\",\n    \"genero\": \"M\",\n    \"edad\": 31,\n    \"direccion\": \"13 junio y Equinoccial\",\n    \"telefono\": \"098874588\",\n    \"clienteId\": 5,\n    \"contrasena\": \"1245\",\n    \"estado\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "ObtenerCuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas/obtenerCuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"obtenerCuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerCuentas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/obtenerCuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"obtenerCuentas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:19:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"cuentaId\": 1,\n        \"numeroCuenta\": \"478758\",\n        \"tipoCuenta\": \"Ahorros\",\n        \"saldoInicial\": 2000,\n        \"saldoDisponible\": 2000,\n        \"estado\": true,\n        \"clienteId\": 1\n    },\n    {\n        \"cuentaId\": 2,\n        \"numeroCuenta\": \"225487\",\n        \"tipoCuenta\": \"Ahorro\",\n        \"saldoInicial\": 100,\n        \"saldoDisponible\": 2000,\n        \"estado\": true,\n        \"clienteId\": 1\n    },\n    {\n        \"cuentaId\": 3,\n        \"numeroCuenta\": \"495878\",\n        \"tipoCuenta\": \"Ahorros\",\n        \"saldoInicial\": 0,\n        \"saldoDisponible\": 0,\n        \"estado\": true,\n        \"clienteId\": 3\n    },\n    {\n        \"cuentaId\": 4,\n        \"numeroCuenta\": \"496825\",\n        \"tipoCuenta\": \"Corriente\",\n        \"saldoInicial\": 540,\n        \"saldoDisponible\": 540,\n        \"estado\": true,\n        \"clienteId\": 2\n    },\n    {\n        \"cuentaId\": 5,\n        \"numeroCuenta\": \"585545\",\n        \"tipoCuenta\": \"Corriente\",\n        \"saldoInicial\": 1000,\n        \"saldoDisponible\": 1000,\n        \"estado\": true,\n        \"clienteId\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "ObtenerCuentaporId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas/obtenerCuentaPorId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"obtenerCuentaPorId",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerCuentaporId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/obtenerCuentaPorId/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"obtenerCuentaPorId",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:21:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 2,\n    \"numeroCuenta\": \"225487\",\n    \"tipoCuenta\": \"Ahorro\",\n    \"saldoInicial\": 100,\n    \"saldoDisponible\": 2000,\n    \"estado\": true,\n    \"clienteId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "ObtenerCuentaporNumero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas/obtenerCuentaPorNumero/478758",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"obtenerCuentaPorNumero",
+								"478758"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerCuentaporNumero",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/obtenerCuentaPorNumero/478758",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"obtenerCuentaPorNumero",
+										"478758"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:21:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 1,\n    \"numeroCuenta\": \"478758\",\n    \"tipoCuenta\": \"Ahorros\",\n    \"saldoInicial\": 2000,\n    \"saldoDisponible\": 2000,\n    \"estado\": true,\n    \"clienteId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearCuenta1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"478758\",\r\n\t\"tipoCuenta\": \"Ahorros\", \r\n\t\"saldoInicial\": 2000.0, \r\n\t\"saldoDisponible\": 2000.0, \r\n    \"estado\": true,\r\n    \"clienteId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCuenta1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numeroCuenta\": \"478758\",\r\n\t\"tipoCuenta\": \"Ahorros\", \r\n\t\"saldoInicial\": 2000.0, \r\n\t\"saldoDisponible\": 2000.0, \r\n    \"estado\": true,\r\n    \"clienteId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:13:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 1,\n    \"numeroCuenta\": \"478758\",\n    \"tipoCuenta\": \"Ahorros\",\n    \"saldoInicial\": 2000,\n    \"saldoDisponible\": 2000,\n    \"estado\": true,\n    \"clienteId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearCuenta2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"numeroCuenta\": \"225487\",\r\n    \"tipoCuenta\": \"Corriente\", \r\n\t\"saldoInicial\": 100.0, \r\n    \"saldoDisponible\": 100.0, \r\n\t\"estado\": true,\r\n    \"clienteId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCuenta2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroCuenta\": \"225487\",\r\n    \"tipoCuenta\": \"Corriente\", \r\n\t\"saldoInicial\": 100.0, \r\n    \"saldoDisponible\": 100.0, \r\n\t\"estado\": true,\r\n    \"clienteId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:14:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 2,\n    \"numeroCuenta\": \"225487\",\n    \"tipoCuenta\": \"Corriente\",\n    \"saldoInicial\": 100,\n    \"saldoDisponible\": 100,\n    \"estado\": true,\n    \"clienteId\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "ActualizarCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuentaId\": 2,\r\n    \"numeroCuenta\": \"225487\",\r\n\t\"tipoCuenta\": \"Ahorro\", \r\n\t\"saldoInicial\": 100.0,\r\n    \"saldoDisponible\": 2000.0, \r\n\t\"estado\": true,\r\n    \"clienteId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCuenta3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"495878\",\r\n\t\"tipoCuenta\": \"Ahorros\", \r\n\t\"saldoInicial\": 0.0, \r\n    \"saldoDisponible\": 0.0, \r\n\t\"estado\": true,\r\n    \"clienteId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCuenta3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numeroCuenta\": \"495878\",\r\n\t\"tipoCuenta\": \"Ahorros\", \r\n\t\"saldoInicial\": 0.0, \r\n    \"saldoDisponible\": 0.0, \r\n\t\"estado\": true,\r\n    \"clienteId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:15:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 3,\n    \"numeroCuenta\": \"495878\",\n    \"tipoCuenta\": \"Ahorros\",\n    \"saldoInicial\": 0,\n    \"saldoDisponible\": 0,\n    \"estado\": true,\n    \"clienteId\": 3\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearCuenta4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"numeroCuenta\": \"496825\",\r\n    \"tipoCuenta\": \"Corriente\", \r\n\t\"saldoInicial\": 540.0,\r\n    \"saldoDisponible\": 540.0,  \r\n\t\"estado\": true,\r\n    \"clienteId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCuenta4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroCuenta\": \"496825\",\r\n    \"tipoCuenta\": \"Corriente\", \r\n\t\"saldoInicial\": 540.0,\r\n    \"saldoDisponible\": 540.0,  \r\n\t\"estado\": true,\r\n    \"clienteId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:15:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 4,\n    \"numeroCuenta\": \"496825\",\n    \"tipoCuenta\": \"Corriente\",\n    \"saldoInicial\": 540,\n    \"saldoDisponible\": 540,\n    \"estado\": true,\n    \"clienteId\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearCuenta5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"numeroCuenta\": \"585545\",\r\n    \"tipoCuenta\": \"Corriente\", \r\n\t\"saldoInicial\": 1000.0, \r\n    \"saldoDisponible\": 1000.0, \r\n\t\"estado\": true,\r\n    \"clienteId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearCuenta5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroCuenta\": \"585545\",\r\n    \"tipoCuenta\": \"Corriente\", \r\n\t\"saldoInicial\": 1000.0, \r\n    \"saldoDisponible\": 1000.0, \r\n\t\"estado\": true,\r\n    \"clienteId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:16:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 6,\n    \"numeroCuenta\": \"585545\",\n    \"tipoCuenta\": \"Corriente\",\n    \"saldoInicial\": 1000,\n    \"saldoDisponible\": 1000,\n    \"estado\": true,\n    \"clienteId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "BorrarCuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas/borrar/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"borrar",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "BorrarCuenta",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/borrar/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"borrar",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:18:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cuentaId\": 6,\n    \"numeroCuenta\": \"585545\",\n    \"tipoCuenta\": \"Corriente\",\n    \"saldoInicial\": 1000,\n    \"saldoDisponible\": 1000,\n    \"estado\": true,\n    \"clienteId\": 1\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "ObtenerMovimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/obtenerMovimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"obtenerMovimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerMovimientos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/movimientos/obtenerMovimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"obtenerMovimientos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:32:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"movimientoId\": 2,\n        \"fecha\": \"2024-07-25T21:25:15.592207\",\n        \"tipoMovimiento\": \"C\",\n        \"numeroCuenta\": \"225487\",\n        \"valor\": 600,\n        \"saldo\": 700\n    },\n    {\n        \"movimientoId\": 1,\n        \"fecha\": \"2024-07-25T21:24:39.004974\",\n        \"tipoMovimiento\": \"D\",\n        \"numeroCuenta\": \"478758\",\n        \"valor\": 575,\n        \"saldo\": 1425\n    },\n    {\n        \"movimientoId\": 3,\n        \"fecha\": \"2024-07-25T21:25:49.50141\",\n        \"tipoMovimiento\": \"C\",\n        \"numeroCuenta\": \"495878\",\n        \"valor\": 150,\n        \"saldo\": 150\n    },\n    {\n        \"movimientoId\": 4,\n        \"fecha\": \"2024-07-25T21:26:16.794372\",\n        \"tipoMovimiento\": \"D\",\n        \"numeroCuenta\": \"496825\",\n        \"valor\": 540,\n        \"saldo\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "ObtenerMovimientosPorNumeroCuenta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/obtenerMovimientos/478758",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"obtenerMovimientos",
+								"478758"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerMovimientosPorNumeroCuenta",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/movimientos/obtenerMovimientos/478758",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"obtenerMovimientos",
+										"478758"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:42:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"movimientoId\": 1,\n        \"fecha\": \"2024-07-25T21:24:39.004974\",\n        \"tipoMovimiento\": \"D\",\n        \"numeroCuenta\": \"478758\",\n        \"valor\": 575,\n        \"saldo\": 1425\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "ObtenerMovimiento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/obtenerMovimiento/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"obtenerMovimiento",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerMovimiento",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/movimientos/obtenerMovimiento/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"obtenerMovimiento",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:44:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movimientoId\": 1,\n    \"fecha\": \"2024-07-25T21:24:39.004974\",\n    \"tipoMovimiento\": \"D\",\n    \"numeroCuenta\": \"478758\",\n    \"valor\": 575,\n    \"saldo\": 1425\n}"
+						}
+					]
+				},
+				{
+					"name": "BorrarMovimiento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/borrar/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"borrar",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "BorrarMovimiento",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/movimientos/borrar/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"borrar",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:45:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movimientoId\": 4,\n    \"fecha\": \"2024-07-25T21:26:16.794372\",\n    \"tipoMovimiento\": \"D\",\n    \"numeroCuenta\": \"496825\",\n    \"valor\": 540,\n    \"saldo\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearMovimiento1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoMovimiento\": \"D\",\r\n\t\"numeroCuenta\": \"478758\",\r\n    \"valor\": 575.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearMovimiento1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipoMovimiento\": \"D\",\r\n\t\"numeroCuenta\": \"478758\",\r\n    \"valor\": 575.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:24:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movimientoId\": 1,\n    \"fecha\": \"2024-07-25T21:24:39.004974\",\n    \"tipoMovimiento\": \"D\",\n    \"numeroCuenta\": \"478758\",\n    \"valor\": 575,\n    \"saldo\": 1425\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearMovimiento4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tipoMovimiento\": \"D\",\r\n\t\"numeroCuenta\": \"496825\",\r\n    \"valor\": 540.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearMovimiento4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"tipoMovimiento\": \"D\",\r\n\t\"numeroCuenta\": \"496825\",\r\n    \"valor\": 540.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:26:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movimientoId\": 4,\n    \"fecha\": \"2024-07-25T21:26:16.794372\",\n    \"tipoMovimiento\": \"D\",\n    \"numeroCuenta\": \"496825\",\n    \"valor\": 540,\n    \"saldo\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearMovimiento5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": 3,\r\n    \"valor\": 1457.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearMovimiento5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": 3,\r\n    \"valor\": 1457.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "Not Implemented",
+							"code": 501,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:26:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"NOT_FOUND\",\n    \"message\": \"Registro no creado o actualizado. Motivo: No existe la cuenta a la que se quiere realizar el movimiento o los datos estan incompletos\"\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearMovimiento6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tipoMovimiento\": \"A\",\r\n\t\"numeroCuenta\": \"478758\",\r\n    \"valor\": 1457.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearMovimiento6",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"tipoMovimiento\": \"A\",\r\n\t\"numeroCuenta\": \"478758\",\r\n    \"valor\": 1457.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "Not Implemented",
+							"code": 501,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:28:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"NOT_FOUND\",\n    \"message\": \"Registro no creado o actualizado. Motivo: Tipo de movimiento no valido\"\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearMovimiento7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": \"478000\",\r\n    \"valor\": 1457.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearMovimiento7",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": \"478000\",\r\n    \"valor\": 1457.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "Not Implemented",
+							"code": 501,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:29:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"NOT_FOUND\",\n    \"message\": \"Registro no creado o actualizado. Motivo: No existe la cuenta a la que se quiere realizar el movimiento o los datos estan incompletos\"\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearMovimiento2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": \"225487\",\r\n    \"valor\": 600.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearMovimiento2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": \"225487\",\r\n    \"valor\": 600.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:25:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movimientoId\": 2,\n    \"fecha\": \"2024-07-25T21:25:15.592207\",\n    \"tipoMovimiento\": \"C\",\n    \"numeroCuenta\": \"225487\",\n    \"valor\": 600,\n    \"saldo\": 700\n}"
+						}
+					]
+				},
+				{
+					"name": "CrearMovimiento3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": \"495878\",\r\n    \"valor\": 150.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CrearMovimiento3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"tipoMovimiento\": \"C\",\r\n\t\"numeroCuenta\": \"495878\",\r\n    \"valor\": 150.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:25:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"movimientoId\": 3,\n    \"fecha\": \"2024-07-25T21:25:49.50141\",\n    \"tipoMovimiento\": \"C\",\n    \"numeroCuenta\": \"495878\",\n    \"valor\": 150,\n    \"saldo\": 150\n}"
+						}
+					]
+				},
+				{
+					"name": "ActualizarMovimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"movimientoId\": 1, \r\n\t\"tipoMovimiento\": \"D\",\r\n\t\"numeroCuenta\": \"496825\",\r\n    \"valor\": -5575.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos/crearOActualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crearOActualizar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ActualizarMovimiento",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"movimientoId\": 1, \r\n\t\"tipoMovimiento\": \"D\",\r\n\t\"numeroCuenta\": \"496825\",\r\n    \"valor\": -5575.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos/crearOActualizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"crearOActualizar"
+									]
+								}
+							},
+							"status": "Not Implemented",
+							"code": 501,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:30:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"NOT_FOUND\",\n    \"message\": \"Registro no creado o actualizado. Motivo: No existe suficiente saldo en la cuenta para este movimiento\"\n}"
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"pm.globals.set(\"currentDate\", new Date().toLocaleDateString());"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "ObtenerReportePorFecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reportes/obtenerMovimientosPorFecha/Jose Lema/2024-07-20/2024-07-25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reportes",
+								"obtenerMovimientosPorFecha",
+								"Jose Lema",
+								"2024-07-20",
+								"2024-07-25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ObtenerReportePorFecha",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/reportes/obtenerMovimientosPorFecha/Jose Lema/2024-07-20/2024-07-25",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reportes",
+										"obtenerMovimientosPorFecha",
+										"Jose Lema",
+										"2024-07-20",
+										"2024-07-25"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Jul 2024 02:47:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombreCliente\": \"Jose Lema\",\n        \"numeroCuenta\": \"478758\",\n        \"tipoCuenta\": \"Ahorros\",\n        \"saldoInicial\": 2000,\n        \"saldoDisponible\": 1425,\n        \"estado\": true,\n        \"fecha\": \"2024-07-25T21:24:39.004974\",\n        \"tipoMovimiento\": \"D\",\n        \"valorMovimiento\": 575\n    },\n    {\n        \"nombreCliente\": \"Jose Lema\",\n        \"numeroCuenta\": \"225487\",\n        \"tipoCuenta\": \"Ahorro\",\n        \"saldoInicial\": 100,\n        \"saldoDisponible\": 700,\n        \"estado\": true,\n        \"fecha\": \"2024-07-25T21:25:15.592207\",\n        \"tipoMovimiento\": \"C\",\n        \"valorMovimiento\": 600\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
